@@ -187,7 +187,6 @@ public class StudentController
                     List<Object> row = new ArrayList<>();
                     row.add( student.getSituation().toString() );
                     row.add( student.getNaf() );
-                    row.add( student.getGradeAverage() );
 
                     data.add( row );
                 }
