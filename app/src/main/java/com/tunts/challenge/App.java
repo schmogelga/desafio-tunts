@@ -16,7 +16,7 @@ public class App {
 
         try 
         {
-            ValueRange values = SheetController.getValues( dotenv.get( "SPREEDSHEET_ID" ), "A:D" );
+            ValueRange values = SheetController.getValues( dotenv.get( "SPREADSHEETS_ID" ), "A:D" );
             
             System.out.println( values );
         } 
