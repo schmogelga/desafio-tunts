@@ -16,6 +16,10 @@ public class Logger
 
     private Logger(){}
 
+    
+    /** 
+     * @param message
+     */
     public static void logInfo( String message ) 
     {
         message = simpleDateFormat.format( new Date( System.currentTimeMillis() ) ) + ": [INFO] " + message + "\n";
@@ -24,6 +28,10 @@ public class Logger
         defaultInstance.logs.append( message );
     }    
 
+    
+    /** 
+     * @param message
+     */
     public static void logError( String message ) 
     {
         message = simpleDateFormat.format( new Date( System.currentTimeMillis() ) ) + ": [ERROR] " + message + "\n";
@@ -37,6 +45,10 @@ public class Logger
         write( defaultInstance.logs.toString() );
     }
 
+    
+    /** 
+     * @param data
+     */
     private static void write( String data ) 
     {
         SimpleDateFormat dateFormat = new SimpleDateFormat( "yyyy-MM-dd-hhmmss" );
@@ -63,5 +75,4 @@ public class Logger
             }
         }
     }
-    
 }
