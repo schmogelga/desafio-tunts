@@ -15,7 +15,6 @@ public class ApplicationContext {
     public static final int REGISTRATION_HEADER        = Integer.parseInt( dotenv.get( "REGISTRATION_HEADER", "0" ) );
     public static final int NAME_HEADER                = Integer.parseInt( dotenv.get( "NAME_HEADER",         "1" ) );
     public static final int ABSENCES_HEADER            = Integer.parseInt( dotenv.get( "ABSENCES_HEADER",     "2" ) );
-    public static final int SITUATION_HEADER           = Integer.parseInt( dotenv.get( "SITUATION_HEADER",    "7" ) );
     
     public static final ArrayList<Integer>P_HEADERS    = new ArrayList<Integer>();
 

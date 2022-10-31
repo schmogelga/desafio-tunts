@@ -129,7 +129,7 @@ public class StudentController {
 
                 if( student.getSituation().equals( Situation.FINAL_EXAM ) )
                 {
-                    student.setNaf( 10 );
+                    student.setNaf( calculateNaf( student.getGradeAverage() ) );
                 }
                 else
                 {
@@ -143,7 +143,12 @@ public class StudentController {
         }
     }
 
-    
+    private int calculateNaf( double studentAverage )
+    {
+        return Double.valueOf( Math.ceil( 100 - studentAverage ) ).intValue();
+    }
+
+
     /** 
      * @throws Exception
      */
@@ -165,7 +170,8 @@ public class StudentController {
                     List<Object> row = new ArrayList<>();
                     row.add( student.getSituation().toString() );
                     row.add( student.getNaf() );
-    
+                    row.add( student.getGradeAverage() );
+
                     data.add( row );
                 }
                 else
