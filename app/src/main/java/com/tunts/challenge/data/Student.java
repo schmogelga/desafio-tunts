@@ -21,7 +21,6 @@ public class Student
         this.registration = registration;
     }
 
-    
     /** 
      * @param grade
      */
@@ -30,7 +29,6 @@ public class Student
         this.grades.add( grade );
     }
 
-    
     /** 
      * @return double
      */
@@ -45,7 +43,6 @@ public class Student
 
         return (double) Math.round( average * 100 ) / 100;
     }
-
     
     /** 
      * @return String
@@ -53,15 +50,15 @@ public class Student
     @Override
     public String toString()
     {
-        return this.name + "(" + getGradeAverage() + ") - " + this.situation + " - " + this.naf;
+        return this.name + "(" + getGradeAverage() + ") - " + this.situation;
     }
 
     public enum Situation {
 
-        ABSENCE_REPROVED( -1, -1, "Reprovado por Falta"), 
+        ABSENCE_REPROVED( -1, -1, "Reprovado por Falta" ), 
 
-        REPROVED(   0,   49,     "Reprovado por Nota"), 
-        FINAL_EXAM( 50,  69,     "Exame Final"), 
+        REPROVED(   0,   49,     "Reprovado por Nota" ), 
+        FINAL_EXAM( 50,  69,     "Exame Final" ), 
         APPROVED(   70,  100,    "Aprovado" );
     
         private final int min;

@@ -5,8 +5,7 @@ package com.tunts.challenge;
 
 import com.tunts.challenge.service.StudentController;
 import com.tunts.challenge.util.Handler;
-
-import io.github.cdimascio.dotenv.Dotenv;
+import com.tunts.challenge.util.Logger;
 
 public class App {
 
@@ -14,12 +13,17 @@ public class App {
     {
         try 
         {
+            Logger.logInfo( "Starting App");
             StudentController.getInstance().doWork();
+            Logger.logInfo( "Finishing App" );
         } 
         catch( Exception e ) 
         {
             Handler.handle( e );
         }
-
+        finally
+        {
+            Logger.dump();
+        }
     }
 }
