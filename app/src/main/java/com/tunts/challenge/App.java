@@ -3,12 +3,23 @@
  */
 package com.tunts.challenge;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import com.google.api.services.sheets.v4.model.ValueRange;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+public class App {
+
+    public static void main( String[] args ) 
+    {
+
+        try 
+        {
+            ValueRange values = SheetController.getValues( "1VlzvJVUJW6Xf0nBMqeI2Rz2Y9mBYXhFbtpi5sDd2T_g", "A:D" );
+            
+            System.out.println( values );
+        } 
+        catch( Exception e ) 
+        {
+            Handler.Handle( e );
+        }
+
     }
 }
