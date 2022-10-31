@@ -5,14 +5,18 @@ package com.tunts.challenge;
 
 import com.google.api.services.sheets.v4.model.ValueRange;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class App {
+
+    private static Dotenv dotenv = Dotenv.load();
 
     public static void main( String[] args ) 
     {
 
         try 
         {
-            ValueRange values = SheetController.getValues( "1VlzvJVUJW6Xf0nBMqeI2Rz2Y9mBYXhFbtpi5sDd2T_g", "A:D" );
+            ValueRange values = SheetController.getValues( dotenv.get( "SPREEDSHEET_ID" ), "A:D" );
             
             System.out.println( values );
         } 
