@@ -3,26 +3,22 @@
  */
 package com.tunts.challenge;
 
-import com.google.api.services.sheets.v4.model.ValueRange;
+import com.tunts.challenge.service.StudentController;
+import com.tunts.challenge.util.Handler;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
 public class App {
 
-    private static Dotenv dotenv = Dotenv.load();
-
     public static void main( String[] args ) 
     {
-
         try 
         {
-            ValueRange values = SheetController.getValues( dotenv.get( "SPREADSHEETS_ID" ), "A:D" );
-            
-            System.out.println( values );
+            StudentController.getInstance().doWork();
         } 
         catch( Exception e ) 
         {
-            Handler.Handle( e );
+            Handler.handle( e );
         }
 
     }

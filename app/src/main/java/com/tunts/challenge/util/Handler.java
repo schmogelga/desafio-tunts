@@ -1,11 +1,14 @@
-package com.tunts.challenge;
+package com.tunts.challenge.util;
 
 import com.google.api.client.googleapis.json.GoogleJsonError;
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 
 public class Handler {
     
-    public static void Handle( Exception e )
+    /** 
+     * @param e
+     */
+    public static void handle( Exception e )
     {
         if( e instanceof GoogleJsonResponseException  )
         {

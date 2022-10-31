@@ -27,6 +27,8 @@ dependencies {
     implementation 'com.google.auth:google-auth-library-oauth2-http:1.12.1'
 
     implementation 'io.github.cdimascio:dotenv-java:2.2.4'
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
 }
 
 application {
