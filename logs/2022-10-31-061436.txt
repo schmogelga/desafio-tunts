@@ -1,0 +1,33 @@
+2022-10-31 06:14:34: [INFO] Starting App
+2022-10-31 06:14:34: [INFO] Sending request to google API - spreadsheetID: 1GUIfv1NnlEa-19ZwBtJgN2s0R34oT7gnyNcHiryu_E0
+2022-10-31 06:14:36: [INFO] Building Student objects
+2022-10-31 06:14:36: [INFO] 
+2022-10-31 06:14:36: [INFO] Found 24 students: 
+2022-10-31 06:14:36: [INFO] Calculating students situations
+2022-10-31 06:14:36: [INFO] Eduardo(53.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Murilo(65.67) - Exame Final
+2022-10-31 06:14:36: [INFO] Guilherme(64.33) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Flavia (75.33) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Ruan(62.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Arnando(76.0) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Lucas(57.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Fabio(79.33) - Aprovado
+2022-10-31 06:14:36: [INFO] Alisson(58.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Felipe(52.67) - Exame Final
+2022-10-31 06:14:36: [INFO] Rachel(63.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Jouy(64.0) - Exame Final
+2022-10-31 06:14:36: [INFO] François(78.33) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Dâmaris(52.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Leonardo(69.0) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Guilherme (50.0) - Exame Final
+2022-10-31 06:14:36: [INFO] Wesley(60.0) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Yuri(70.67) - Aprovado
+2022-10-31 06:14:36: [INFO] Kira(43.33) - Reprovado por Nota
+2022-10-31 06:14:36: [INFO] Cleici(90.33) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] João Moacir(75.33) - Reprovado por Falta
+2022-10-31 06:14:36: [INFO] Bruno(77.67) - Aprovado
+2022-10-31 06:14:36: [INFO] Elcio(73.0) - Aprovado
+2022-10-31 06:14:36: [INFO] Criscia(76.33) - Aprovado
+2022-10-31 06:14:36: [INFO] 
+2022-10-31 06:14:36: [INFO] Writing values in the spreadsheet
+2022-10-31 06:14:36: [INFO] Finishing App

@@ -1,0 +1,4 @@
+2022-10-31 06:13:52: [INFO] Starting App
+2022-10-31 06:13:53: [INFO] Sending request to google API - spreadsheetID: 1GUIfv1NnlEa-19ZwBtJgN2s0R34oT7gnyNcHiryu_E0
+2022-10-31 06:13:54: [ERROR] 403 - The caller does not have permission
+2022-10-31 06:13:54: [INFO] Finishing App
